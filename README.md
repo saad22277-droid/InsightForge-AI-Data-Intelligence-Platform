@@ -116,10 +116,53 @@ Stage 1-4 endpoints and the `/` and `/health` payloads are unchanged.
 
 ## Screenshots
 
-| | |
-|---|---|
-| ![Cleaning](docs/screenshots/03-cleaning.png) | ![ML](docs/screenshots/09-ml-models.png) |
-| ![EDA](docs/screenshots/05-eda-correlations.png) | ![Box plot](docs/screenshots/07-viz-box.png) |
+### 1. Overview and Datasets
+
+![Overview](docs/screenshots/01-overview.png)
+
+![Datasets](docs/screenshots/02-datasets.png)
+
+---
+
+### 2. Data Cleaning and Quality
+
+![Data Cleaning](docs/screenshots/03-cleaning.png)
+
+![Data Quality](docs/screenshots/04-quality.png)
+
+---
+
+### 3. Exploratory Data Analysis and Visualizations
+
+![EDA Correlations](docs/screenshots/05-eda-correlations.png)
+
+![Histogram](docs/screenshots/06-viz-histogram.png)
+
+![Box Plot](docs/screenshots/07-viz-box.png)
+
+---
+
+### 4. Machine Learning
+
+![ML Training](docs/screenshots/08-ml-train.png)
+
+![ML Models](docs/screenshots/09-ml-models.png)
+
+---
+
+### 5. AI and Reports
+
+![Ask AI](docs/screenshots/10-ask-ai.png)
+
+![Reports](docs/screenshots/11-reports.png)
+
+---
+
+### 6. Experiments and Settings
+
+![Experiments](docs/screenshots/12-experiments.png)
+
+![Settings](docs/screenshots/13-settings.png)
 
 ## Troubleshooting
 
