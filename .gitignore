@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+data/raw/*
+data/processed/*
+data/profiles/*
+data/models/*
+data/reports/*
+!data/samples/
+frontend/dist/
+frontend/node_modules/
+*.joblib
+
+# Local datasets and generated files
+data/raw/
+data/models/
+data/profiles/
+data/reports/
+
+# Local generated reports
+reports/*.png
+reports/*.pdf
