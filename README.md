@@ -47,7 +47,7 @@ Details: [Architecture](docs/ARCHITECTURE.md) - [Database](docs/DATABASE.md) - [
 ## Project structure
 
 ```text
-ai-data-platform/
+InsightForge/
 ├── data/                  samples/ (demo CSV); raw/, models/, reports/, profiles/ are generated and git-ignored
 ├── docs/                  documentation, diagrams, screenshots
 ├── frontend/              React + TypeScript app (src/pages, src/components, src/lib)
@@ -74,7 +74,7 @@ python -m pip install -r requirements-dev.txt
 Copy-Item .env.example .env          # then edit DATABASE_URL (and optionally GEMINI_API_KEY)
 psql -U postgres -c "CREATE DATABASE ai_data_platform;"
 python -m alembic upgrade head
-python -m uvicorn src.app.main:app --reload --port 8000
+python -m uvicorn app.main:app --app-dir src --reload --port 8000
 # second window
 cd frontend; npm install; npm run dev        # http://localhost:5173
 ```
@@ -87,7 +87,7 @@ All settings are environment variables (see `.env.example`). Important ones:
 |---|---|---|
 | `DATABASE_URL` | required | PostgreSQL connection string |
 | `GEMINI_API_KEY` | unset | Enables AI features. Free key: https://aistudio.google.com/apikey |
-| `GEMINI_MODEL` | `gemini-2.5-flash` | Any model your key can use |
+| `GEMINI_MODEL` | `gemini-3.5-flash-lite` | Any model your key can use |
 | `AI_MAX_TOOL_CALLS` / `AI_REQUESTS_PER_MINUTE` | 6 / 20 | Quota and safety limits |
 | `MAX_UPLOAD_MB` / `MAX_DATASET_ROWS` | 25 / 500000 | Upload limits |
 | `ML_MAX_TRAIN_ROWS` / `ML_RANDOM_STATE` | 100000 / 42 | Training limits / default seed |
@@ -133,3 +133,6 @@ authentication, and training is synchronous.
 ## License
 
 See `LICENSE`.
+
+
+
